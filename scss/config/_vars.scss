@@ -1,12 +1,16 @@
 $mainOffset: 15px;
 $mainFont: 'Aleo', serif;
 
+$headerHeight: 90px;
+
 $whiteColor: rgb(248, 248, 248);
 $firstAccentColor: #F2785C;
 $secondAccentColor: #0D606F;
 $fontColor: #011627;
 $main-bg: #2c3d49;
 $main-bg-hover: #28485f;
+$btnBoxShadow:  0px 4px 4px rgba(0, 0, 0, 25%), 
+                0px 2px 3px rgba(13, 96, 111, 16%);
 
 $lightBoxShadow:  0 0 2px 0 rgba(#000, 10%), 
                   0 0 4px 0 rgba(#000, 10%), 
