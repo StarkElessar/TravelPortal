@@ -1,0 +1,112 @@
+.start {
+  width: 100%;
+  background-image: url("../images/start/background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 254px;
+  @include adaptive-value("padding-bottom", 254, 45, 2);
+
+  &__title {
+    max-width: 790px;
+    @include adaptive-value("margin-top", 30, 15, 2);
+    @include adaptive-value("margin-bottom", 30, 15, 2);
+    color: #fff;
+    @include adaptiv-font(61, 36);
+    font-weight: 700;
+    line-height: 96px;
+    @include adaptive-value("line-height", 96, 50, 2);
+    @media (max-width: 425.98px) {
+      display: none;
+    }
+  }
+  &__desc {
+    margin-bottom: 46px;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    @media (max-width: 425.98px) {
+      display: none;
+    }
+  }
+}
+
+.action-start {
+  position: relative;
+  width: 892px;
+  height: 95px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: $btnBoxShadow;
+  @media (max-width: 924.98px) {
+    max-width: 100%;
+    @include adaptive-value("height", 90, 48, 1);
+  }
+  @media (max-width: 425.98px) {
+    margin-top: 50px;
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 35px 291px 35px 41px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $firstAccentColor;
+    @media (max-width: 924.98px) {
+      padding: 15px 185px 15px 17px;
+      @include adaptiv-font(23, 14);
+      line-height: 1;
+    }
+    @media (max-width: 725.98px) {
+      padding-right: 170px;
+    }
+    @media (max-width: 590.98px) {
+      padding-right: 160px;
+    }
+    @media (max-width: 390.98px) {
+      padding-right: 140px;
+    }
+    &::placeholder {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $firstAccentColor;
+      @media (max-width: 924.98px) {
+        @include adaptiv-font(23, 14);
+        line-height: 1;
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    padding: 13.5px 32.5px;
+    color: #fff;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    transform: translateY(-50%);
+    background: $secondAccentColor;
+    box-shadow: $btnBoxShadow;
+    border-radius: $mainRadius;
+    transition: $standartTrans;
+    &:hover {
+      background: darken($secondAccentColor, 10%);
+    }
+    @media (max-width: 924.98px) {
+      padding: 9px 10px;
+      @include adaptiv-font(23, 14);
+      line-height: 1;
+    }
+  }
+}
