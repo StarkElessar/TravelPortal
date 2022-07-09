@@ -1,0 +1,58 @@
+.destinations {
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    @include adaptive-value("height", 120, 60, 1);
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include adaptiv-font(40, 14);
+    line-height: 53px;
+    color: $firstAccentColor;
+  }
+  &__btn {
+    display: block;
+    margin: 20px auto 0;
+    @include adaptive-value("padding-top", 13, 8, 1);
+    @include adaptive-value("padding-right", 31, 20, 1);
+    @include adaptive-value("padding-bottom", 13, 8, 1);
+    @include adaptive-value("padding-left", 31, 20, 1);
+    background: $secondAccentColor;
+    box-shadow: $btnBoxShadow;
+    @include adaptive-value("border-radius", 10, 15, 1);
+    transition: $standartTrans;
+    &:hover {
+      background: darken($secondAccentColor, 10%);
+    }
+    
+    & span {
+      position: relative;
+      color: #fff;
+      font-family: "Red Hat Text";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      @include adaptiv-font(24, 11);
+      line-height: 32px;
+      padding-left: 50px;
+      @include adaptive-value("padding-left", 50, 20, 1);
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include adaptive-value("width", 40, 16, 1);
+        @include adaptive-value("height", 40, 16, 1);
+        background-image: url("../images/stories/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
