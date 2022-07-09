@@ -60,6 +60,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 600ms ease;
+  z-index: 100;
   &.show {
     visibility: visible;
     opacity: 1;
