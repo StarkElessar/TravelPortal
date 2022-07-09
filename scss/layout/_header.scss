@@ -111,28 +111,28 @@
     border-radius: 2px;
     background: #fff;
     transition: $standartTrans;
-  }
-  &__top {
-    top: 0;
-  }
-  &__center {
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  &__bottom {
-    bottom: 0;
+    &_top {
+      top: 0;
+    }
+    &_center {
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &_bottom {
+      bottom: 0;
+    }
   }
 
   &.active {
-    .burger-btn__top {
+    .burger-btn__line_top {
       transform: translate(-50%, 6px) rotate(45deg);
     }
-    .burger-btn__center {
+    .burger-btn__line_center {
       transform: translateX(-150%);
       opacity: 0;
       visibility: hidden;
     }
-    .burger-btn__bottom {
+    .burger-btn__line_bottom {
       transform: translate(-50%, -8px) rotate(-45deg);
     }
   }
