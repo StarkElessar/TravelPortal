@@ -238,25 +238,25 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 280ms ease 0ms;
 }
-.burger-btn__top {
+.burger-btn__line_top {
   top: 0;
 }
-.burger-btn__center {
+.burger-btn__line_center {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.burger-btn__bottom {
+.burger-btn__line_bottom {
   bottom: 0;
 }
-.burger-btn.active .burger-btn__top {
+.burger-btn.active .burger-btn__line_top {
   transform: translate(-50%, 6px) rotate(45deg);
 }
-.burger-btn.active .burger-btn__center {
+.burger-btn.active .burger-btn__line_center {
   transform: translateX(-150%);
   opacity: 0;
   visibility: hidden;
 }
-.burger-btn.active .burger-btn__bottom {
+.burger-btn.active .burger-btn__line_bottom {
   transform: translate(-50%, -8px) rotate(-45deg);
 }
 
