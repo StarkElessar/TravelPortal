@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
   <title>Travel Portal</title>
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header">
@@ -49,9 +51,7 @@
           <h1 class="start__title">Explore the beauty of the World</h1>
           <p class="start__desc">Receive personalized recommendations for countries, hotels, activities and more</p>
           <div class="start__action action-start">
-            <input type="text" 
-              class="action-start__input" 
-              placeholder="What would you like to do?">
+            <input type="text" class="action-start__input" placeholder="What would you like to do?">
             <button class="action-start__btn">
               Start Planning
             </button>
@@ -59,6 +59,81 @@
         </div>
       </section>
 
+      <section class="page__steps steps">
+        <div class="steps__container">
+          <h2 class="steps__title">3 steps to the perfect trip</h2>
+          <div class="steps__items items-block">
+            <div class="items-block__item">
+              <div class="items-block__img">
+                <img src="./images/steps/01.svg" alt="Step Icon">
+              </div>
+
+              <p class="items-block__text">
+                Tell us what you want to do
+              </p>
+            </div>
+
+            <div class="items-block__item">
+              <div class="items-block__img">
+                <img src="./images/steps/02.svg" alt="Step Icon">
+              </div>
+
+              <p class="items-block__text">
+                Share us preferable dates
+              </p>
+            </div>
+
+            <div class="items-block__item">
+              <div class="items-block__img">
+                <img src="./images/steps/03.svg" alt="Step Icon">
+              </div>
+
+              <p class="items-block__text">
+                We will give you recommendations
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page_destinations destinations">
+        <h2 class="destinations__title">Popular destinations</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__img">
+                <img src="./images/destinations/01.png" alt="Slider Image">
+                <h4 class="swiper-slide__title">Japan</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__img">
+                <img src="./images/destinations/02.png" alt="Slider Image">
+                <h4 class="swiper-slide__title">Spain</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__img">
+                <img src="./images/destinations/03.png" alt="Slider Image">
+                <h4 class="swiper-slide__title">USA</h4>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <button class="destinations__btn"><span>Find More</span></button>
+      </section>
+      
       <section class="page__stories stories">
         <div class="stories__wrapper">
           <h2 class="stories__title">Travel Stories</h2>
@@ -76,7 +151,12 @@
                     10 Photos of Attractive Thailand
                   </h4>
                   <p class="post-story__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit...
                   </p>
                   <a href="#" class="post-story__link">Read More</a>
                 </div>
@@ -90,7 +170,12 @@
                     Canyonlands National Park, Utah
                   </h4>
                   <p class="post-story__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit...
                   </p>
                   <a href="#" class="post-story__link">Read More</a>
                 </div>
@@ -104,7 +189,12 @@
                     I left my heart in the Mountains!
                   </h4>
                   <p class="post-story__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit...
                   </p>
                   <a href="#" class="post-story__link">Read More</a>
                 </div>
@@ -118,7 +208,12 @@
                     The Longest journey in my life!
                   </h4>
                   <p class="post-story__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit...
                   </p>
                   <a href="#" class="post-story__link">Read More</a>
                 </div>
@@ -180,6 +275,8 @@
   </div>
   <!-- end Burger-Menu -->
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
