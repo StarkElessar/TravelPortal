@@ -25,4 +25,29 @@ window.addEventListener('DOMContentLoaded', () => {
     popupWrapper.classList.add('show')
     burgerMenu.classList.add('show')
   }
+
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      // when window width is >= 480px
+      426: {
+        slidesPerView: 1.8,
+        spaceBetween: 20
+      }
+    },
+    centeredSlides: true
+  });
 })
