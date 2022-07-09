@@ -5,8 +5,13 @@
 @import 'config/reset';
 @import 'config/global';
 
+@import 'swiper/swiper-bundle';
+
 @import 'layout/header';
 @import 'layout/start';
+@import 'layout/steps';
+@import 'layout/destinations';
+@import 'layout/swiper';
 @import 'layout/stories';
 @import 'layout/footer';
 @import 'layout/burger-menu';
