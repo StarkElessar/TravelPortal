@@ -4,34 +4,36 @@
   left: 0;
   width: 100%;
   height: $footerHeight;
-  background: $fontColor;
   &__container {
+    position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   &__copy {
-    margin-left: auto;
+    margin: 0 auto;
     font-family: "Red Hat Text";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
     color: #fff;
-    @media (max-width: 425.98px) {
+    @media (max-width: 645.98px) {
       display: none;
     }
   }
   &__social {
     margin-left: auto;
-    @media (max-width: 425.98px) {
+    @media (max-width: 645.98px) {
       margin-left: 0;
     }
   }
 }
 
 .social-icon {
+  position: absolute;
+  right: 15px;
   display: flex;
   &__img {
     &:not(:last-child) {
@@ -42,5 +44,9 @@
     &:hover {
       opacity: 1;
     }
+  }
+  @media (max-width: 645.98px) {
+    position: relative;
+    right: 0;
   }
 }
