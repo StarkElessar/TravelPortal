@@ -7,20 +7,6 @@
     justify-content: center;
   }
 
-  &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    @include adaptive-value("height", 120, 60, 1);
-    font-family: "Red Hat Text";
-    font-style: normal;
-    font-weight: 500;
-    text-transform: uppercase;
-    @include adaptiv-font(40, 14);
-    line-height: 53px;
-    color: $firstAccentColor;
-  }
   &__body {
     position: relative;
     padding-top: 40px;

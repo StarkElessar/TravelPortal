@@ -1,21 +1,7 @@
 .steps {
-  padding-top: 80px;
-  padding-bottom: 90px;
-  @include adaptive-value("padding-top", 80, 20, 1);
+  @include adaptive-value("padding-top", 45, 20, 1);
   @include adaptive-value("padding-bottom", 90, 20, 1);
 
-  &__container {
-  }
-  &__title {
-    text-align: center;
-    font-family: "Red Hat Text";
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 500;
-    @include adaptiv-font(40, 14);
-    line-height: 53px;
-    color: $firstAccentColor;
-  }
   &__items {
     @include adaptive-value("margin-top", 55, 10, 1);
   }
