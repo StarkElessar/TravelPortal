@@ -109,6 +109,26 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  font-family: "Red Hat Text";
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(14px + 26 * ((100vw - 320px) / 880));
+  line-height: 53px;
+  color: #F2785C;
+}
+@media (max-width: 1200px) {
+  .title {
+    height: calc(60px + 60 * ((100vw - 320px) / 880));
+  }
+}
+
 /*
   Swiper 8.2.6
   Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1159,30 +1179,18 @@ button.swiper-pagination-bullet {
 }
 
 .steps {
-  padding-top: 80px;
-  padding-bottom: 90px;
-  padding-top: 80px;
+  padding-top: 45px;
   padding-bottom: 90px;
 }
 @media (max-width: 1200px) {
   .steps {
-    padding-top: calc(20px + 60 * ((100vw - 320px) / 880));
+    padding-top: calc(20px + 25 * ((100vw - 320px) / 880));
   }
 }
 @media (max-width: 1200px) {
   .steps {
     padding-bottom: calc(20px + 70 * ((100vw - 320px) / 880));
   }
-}
-.steps__title {
-  text-align: center;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: calc(14px + 26 * ((100vw - 320px) / 880));
-  line-height: 53px;
-  color: #F2785C;
 }
 .steps__items {
   margin-top: 55px;
@@ -1264,25 +1272,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-.destinations__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  height: 120px;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: calc(14px + 26 * ((100vw - 320px) / 880));
-  line-height: 53px;
-  color: #F2785C;
-}
-@media (max-width: 1200px) {
-  .destinations__title {
-    height: calc(60px + 60 * ((100vw - 320px) / 880));
-  }
-}
 .destinations__btn {
   display: block;
   margin: 20px auto 0;
@@ -1467,25 +1456,6 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.stories__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  height: 120px;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: calc(14px + 26 * ((100vw - 320px) / 880));
-  line-height: 53px;
-  color: #F2785C;
-}
-@media (max-width: 1200px) {
-  .stories__title {
-    height: calc(60px + 60 * ((100vw - 320px) / 880));
-  }
 }
 .stories__body {
   position: relative;
