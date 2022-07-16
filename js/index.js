@@ -1,12 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", () => {
   const loginButton     = document.querySelector(".header__login-btn");
   const modalCloseBtns  = document.querySelectorAll(".btn-close");
   const modalSignIn     = document.querySelector(".modal-sign-in");
   const modalLogIn      = document.querySelector(".modal-login");
   const registerBtn     = document.querySelector(".link-register");
   const loginBtn        = document.querySelector(".link-login");
-
-  const body = document.querySelector("body");
+  const body            = document.querySelector("body");
 
   if (loginButton) {
     loginButton.addEventListener("click", () => {
@@ -44,9 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modalLogIn.classList.add("show");
     }
   });
-});
 
-window.addEventListener('DOMContentLoaded', () => {
   const burgerBtn = document.querySelector('.burger-btn')
   const closeBurgerMenu = document.querySelector('.burger-menu__close-btn')
   const burgerMenu = document.querySelector('.burger-menu')
