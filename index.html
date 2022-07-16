@@ -275,6 +275,65 @@
   </div>
   <!-- end Burger-Menu -->
 
+<!-- start Modal SignIn -->
+<div class="modal-sign-in modal-sign-in__wrapper">
+  <div class="modal-sign-in__body">
+    <span class="modal-sign-in__close-btn btn-close">x</span>
+    <h2 class="modal-sign-in__title popup-title">Create acount</h2>
+    <form action="/" class="modal-sign-in__form-control form-control">
+      <div class="form-control__input-block">
+        <label for="sign-in-email" class="form-control__label">E-mail</label>
+        <input id="sign-in-email" type="text" name="user_email" class="form-control__input" required />
+      </div>
+      <div class="form-control__input-block">
+        <label for="sign-in-password" class="form-control__label">Password</label>
+        <input id="sign-in-password" type="password" name="user_email" class="form-control__input" required />
+      </div>
+      <button class="form-control__btn">Sign In</button>
+    </form>
+    <div class="modal-sign-in__footer modal-footer">
+      <span class="modal-footer__text">Already have an account?</span>
+      <a href="#" class="modal-footer__link link-login">Log in</a>
+    </div>
+  </div>
+</div>
+<!-- end Modal SignIn -->
+
+<!-- start Modal LogIn -->
+<div class="modal-login modal-login__wrapper">
+  <div class="modal-login__body">
+    <span class="modal-login__close-btn btn-close">x</span>
+    <h2 class="modal-login__title popup-title">Log in to your account</h2>
+    <div class="modal-login__actions">
+      <button class="modal-login__action-btn modal-login__action-btn_facebook">
+        <span> Sign In with Facebook </span>
+      </button>
+      <button class="modal-login__action-btn modal-login__action-btn_google">
+        <span> Sign In with Google </span>
+      </button>
+    </div>
+    <span class="modal-login__separator">or</span>
+    <form action="/" class="modal-login__form-control form-control">
+      <div class="form-control__input-block">
+        <label for="login-email" class="form-control__label">E-mail</label>
+        <input id="login-email" type="text" name="user_email" class="form-control__input" required />
+      </div>
+      <div class="form-control__input-block">
+        <label for="login-password" class="form-control__label">Password</label>
+        <input id="login-password" type="password" name="user_email" class="form-control__input" required />
+      </div>
+      <button class="form-control__btn">Sign In</button>
+    </form>
+    <a href="#" class="modal-login__link">Forgot Your Password?</a>
+    <div class="modal-login__footer modal-footer">
+      <span class="modal-footer__text">Don't have an account?</span>
+      <a href="#" class="modal-footer__link link-register">Register</a>
+    </div>
+  </div>
+</div>
+<!-- end Modal LogIn -->
+
+
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
