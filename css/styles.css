@@ -129,6 +129,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background: #F2785C;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  visibility: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 280ms ease 0ms;
+  z-index: 500;
+}
+.back-to-top:hover {
+  background: #d73611;
+}
+.back-to-top_show {
+  transform: translateY(0%);
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1), 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 /*
   Swiper 8.2.6
   Most modern mobile touch slider and framework with hardware accelerated transitions
