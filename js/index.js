@@ -1,48 +1,50 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const loginButton     = document.querySelector(".header__login-btn");
-  const modalCloseBtns  = document.querySelectorAll(".btn-close");
-  const modalSignIn     = document.querySelector(".modal-sign-in");
-  const modalLogIn      = document.querySelector(".modal-login");
-  const registerBtn     = document.querySelector(".link-register");
-  const loginBtn        = document.querySelector(".link-login");
-  const body            = document.querySelector("body");
+  const loginButton = document.querySelector(".header__login-btn")
+  const modalCloseBtns = document.querySelectorAll(".btn-close")
+  const modalSignIn = document.querySelector(".modal-sign-in")
+  const modalLogIn = document.querySelector(".modal-login")
+  const registerBtn = document.querySelector(".link-register")
+  const loginBtn = document.querySelector(".link-login")
+  const body = document.querySelector("body")
+  const menuNav = document.querySelector('.menu__list')
+  const goTopBtn = document.querySelector('.back-to-top')
 
   if (loginButton) {
     loginButton.addEventListener("click", () => {
-      body.classList.add("lock");
-      modalLogIn.classList.add("show");
-    });
+      body.classList.add("lock")
+      modalLogIn.classList.add("show")
+    })
   }
 
   if (modalCloseBtns.length > 0) {
     modalCloseBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        body.classList.remove("lock");
+        body.classList.remove("lock")
         if (modalLogIn) {
-          modalLogIn.classList.remove("show");
+          modalLogIn.classList.remove("show")
         }
         if (modalLogIn) {
-          modalSignIn.classList.remove("show");
+          modalSignIn.classList.remove("show")
         }
-      });
-    });
+      })
+    })
   }
 
   registerBtn.addEventListener("click", (event) => {
     if (modalLogIn.classList.contains("show")) {
-      event.preventDefault;
-      modalLogIn.classList.remove("show");
-      modalSignIn.classList.add("show");
+      event.preventDefault
+      modalLogIn.classList.remove("show")
+      modalSignIn.classList.add("show")
     }
-  });
+  })
 
   loginBtn.addEventListener("click", (event) => {
     if (modalSignIn.classList.contains("show")) {
-      event.preventDefault;
-      modalSignIn.classList.remove("show");
-      modalLogIn.classList.add("show");
+      event.preventDefault
+      modalSignIn.classList.remove("show")
+      modalLogIn.classList.add("show")
     }
-  });
+  })
 
   const burgerBtn = document.querySelector('.burger-btn')
   const closeBurgerMenu = document.querySelector('.burger-menu__close-btn')
@@ -51,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (burgerBtn || burgerMenu) {
     burgerBtn.addEventListener('click', showBurgerMenu)
-  
+
     closeBurgerMenu.addEventListener('click', hideBurgerMenu)
     popupWrapper.addEventListener('click', (e) => {
       if (e.target && e.target.classList.contains('popup__wrapper')) {
@@ -94,5 +96,41 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     },
     centeredSlides: true
-  });
+  })
+
+
+  menuNav.onclick = ((event) => {
+    const getId = (link) => link.getAttribute('href').replace('#', '')
+
+    if (event.target.classList.contains('__link')) {
+      event.preventDefault()
+
+      window.scrollTo({
+        top: document.getElementById(getId(event.target)).offsetTop,
+        behavior: 'smooth',
+      })
+    }
+  })
+
+  
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset
+    const coords = document.documentElement.clientHeight
+    
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back-to-top_show')
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back-to-top_show')
+    }
+  })
+
+  goTopBtn.addEventListener('click', function backToTop() {
+    const scrolled = window.pageYOffset
+
+    if (scrolled > 0) {
+      window.scrollBy(0, -30)
+      setTimeout(backToTop, 3)
+    }
+  })
 })
